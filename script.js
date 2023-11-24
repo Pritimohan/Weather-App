@@ -9,7 +9,7 @@ const humidity = document.querySelector("#humidity");
 const weathermood = document.querySelector("#weathermood");
 
 searchBtn.addEventListener("click", () => {
-  const city = document.querySelector("#searchbox").value;
+  const city = document.querySelector("#searchbox").value.trim();
   async function getWeather() {
     const rawData = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
@@ -27,24 +27,19 @@ searchBtn.addEventListener("click", () => {
     if (data.weather[0].main === "Clear") {
       weatherIcon.src = `icons/clear.png`;
       weathermood.innerHTML = data.weather[0].main;
-    } 
-    else if (data.weather[0].main === "Clouds") {
+    } else if (data.weather[0].main === "Clouds") {
       weatherIcon.src = `icons/clouds.png`;
       weathermood.innerHTML = data.weather[0].main;
-    } 
-    else if (data.weather[0].main === "Rain") {
+    } else if (data.weather[0].main === "Rain") {
       weatherIcon.src = `icons/rain.png`;
       weathermood.innerHTML = data.weather[0].main;
-    } 
-    else if (data.weather[0].main === "Drizzle") {
+    } else if (data.weather[0].main === "Drizzle") {
       weatherIcon.src = `icons/drizzle.png`;
       weathermood.innerHTML = data.weather[0].main;
-    }
-     else if (data.weather[0].main === "Mist") {
+    } else if (data.weather[0].main === "Mist") {
       weatherIcon.src = `icons/mist.png`;
       weathermood.innerHTML = data.weather[0].main;
-    } 
-    else if (data.weather[0].main === "Haze") {
+    } else if (data.weather[0].main === "Haze") {
       weatherIcon.src = `icons/haze.png`;
       weathermood.innerHTML = data.weather[0].main;
     }
