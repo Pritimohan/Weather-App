@@ -4,7 +4,7 @@
 }
   .displayBox {
    width: 80vw;
-   height: 65vh;
+   height: 80vh;
   }
   .temp{
     top: 120px;
@@ -17,6 +17,32 @@
   .othersDtls{
     top: 500px;
     left: 75px;
+  }
+  #sbtn{
+    font-size: 2rem;
+  }
+}@media only screen and (max-width:380px) {
+.main{
+  overflow: hidden;
+}
+form{
+  left: 25px;
+}
+  .displayBox {
+   width: 80vw;
+   height: 80vh;
+  }
+  .temp{
+    top: 120px;
+    left: 40px;
+  }
+  .imgofweather{
+    top: 300px;
+    left: 65px;
+  }
+  .othersDtls{
+    top: 500px;
+    left: 40px;
   }
   #sbtn{
     font-size: 2rem;
