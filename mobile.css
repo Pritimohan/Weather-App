@@ -1,0 +1,24 @@
+@media only screen and (max-width:455px) {
+.main{
+  overflow: hidden;
+}
+  .displayBox {
+   width: 80vw;
+   height: 65vh;
+  }
+  .temp{
+    top: 120px;
+    left: 50px;
+  }
+  .imgofweather{
+    top: 300px;
+    left: 90px;
+  }
+  .othersDtls{
+    top: 500px;
+    left: 75px;
+  }
+  #sbtn{
+    font-size: 2rem;
+  }
+}

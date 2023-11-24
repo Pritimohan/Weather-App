@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div class="displayBox" id="displayBox">
+            <form action="">
+                <input type="text" id="searchbox" placeholder="Enter City name">
+                <i class="ri-search-2-line" type="submit" id="sbtn"></i>
+            </form>
+            <div class="temp">
+                <h1>City Name</h1>
+                <p>0°C</p>
+                <p>Feel Like 0°C</p>
+            </div>
+            <div class="imgofweather">
+                <img src="icons/clear.png" alt="" width="150px" id="weathericon">
+                <p id="weathermood">Clear</p>
+            </div>
+            <div class="othersDtls">
+                <div class="dtls">
+                    <img src="icons/wind.png" alt="" width="25px">
+                    <p id="windspeed">0 km/h</p>
+                </div>
+                <div class="dtls">
+                  <img src="icons/humidity.png" alt="" width="25px">
+                    <p id="humidity">0 %</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

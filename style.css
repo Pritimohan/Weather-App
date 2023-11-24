@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #780000; */
+  background-image: url(mountains-1412683.svg);
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayBox {
+  position: relative;
+  width: 40vw;
+  height: 75vh;
+  background-color: #5b5b93;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+form {
+  position: absolute;
+  /* border: green solid; */
+  top: 40px;
+  left: 35px;
+}
+#searchbox {
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+  padding: 5px 20px;
+  border: none;
+  background-color: #fdf0d5;
+  color: #3f2e3c;
+}
+#searchbox:focus {
+  outline: none;
+}
+#searchbox::placeholder {
+  color: #5b5b93;
+}
+#sbtn {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.temp {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  /* border:white solid; */
+  top: 40px;
+  left: 290px;
+  color: #fdf0d5;
+}
+.temp > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+.temp > p:nth-child(2) {
+  font-size: 4rem;
+}
+.temp > p:nth-child(3) {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.othersDtls {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  border: white soli0;
+  top: 260px;
+  left: 270px;
+  margin: 0px auto;
+  color: #fdf0d5;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dtls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dtls > p {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.imgofweather {
+  position: absolute;
+  /* border: white solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 120px;
+  left: 60px;
+}
+.imgofweather > p {
+  font-size: 1.5rem;
+  color: #fdf0d5;
+}
