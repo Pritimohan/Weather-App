@@ -12,11 +12,11 @@
   }
   .imgofweather{
     top: 300px;
-    left: 90px;
+    left: 80px;
   }
   .othersDtls{
     top: 500px;
-    left: 75px;
+    left: 55px;
   }
   #sbtn{
     font-size: 2rem;
@@ -38,7 +38,7 @@ form{
   }
   .imgofweather{
     top: 300px;
-    left: 65px;
+    left: 60px;
   }
   .othersDtls{
     top: 500px;
